@@ -4,6 +4,8 @@ Another Processwire Boilerplate to make my life a little eaier
 **Installation**
 
  - Download processwire, and copy the `/wire/` directory, `install.php`, and `index.php` to project root.
+ - Change project name in `package.json` (doesn't really matter), and `/docker/.env` (also doesn't really matter)
+ - Run docker compose  
  - Run `composer install`
  - Run `npm install`
  - Visit site root in browser and do install
