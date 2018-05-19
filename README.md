@@ -1,11 +1,14 @@
 # processwire-boilerplate
-Another Processwire Boilerplate to make my life a little eaier
+Another Processwire Boilerplate to make my life a little easier
+
+Uses Laravel Mix to make the webpack experience something I don't have to think about anymore
+and includes a pretty decent start for an nginx configuration. Also starts me off with Twig templating.
 
 **Installation**
 
  - Download processwire, and copy the `/wire/` directory, `install.php`, and `index.php` to project root, or just execute `init.sh`.
  - Change project name in `package.json` (doesn't really matter), and `/docker/.env` (also doesn't really matter)
- - Run docker compose  
+ - Run docker compose for dev, or copy `/docker/vhost.conf` for a production server
  - Run `composer install`
  - Run `npm install`
  - Visit site root in browser and do install
