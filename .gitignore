@@ -1,0 +1,12 @@
+sess_*
+.idea/
+vendor/
+wire/
+node_modules/
+composer.lock
+.htaccess
+tmp
+upgrade.php
+/site/assets/cache/
+/site/assets/logs/
+/site/assets/sessions/

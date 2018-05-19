@@ -1,0 +1,38 @@
+version: '3'
+services:
+
+  # The app itself
+  app:
+    build:
+      context: ./
+      dockerfile: ./app.Dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../:/var/www
+  # A Web Server
+  web:
+    build:
+      context: ./
+      dockerfile: ./web.Dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../:/var/www
+    ports:
+      - 80:80
+
+  # A Database
+  database:
+    image: mariadb:latest
+    #command: "mysqld --innodb_use_native_aio=0" # innodb_use_native_aio=0 is to avoid mariaDB crapping out on windows
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=pw"
+      - "MYSQL_USER=pw"
+      - "MYSQL_PASSWORD=pw"
+      - "MYSQL_ROOT_PASSWORD=pw"
+    ports:
+        - "3306:3306"
+volumes:
+  dbdata:
+  dbdata_dusk:
