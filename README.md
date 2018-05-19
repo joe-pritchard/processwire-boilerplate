@@ -11,6 +11,7 @@ and includes a pretty decent start for an nginx configuration. Also starts me of
  - Run `docker-compose -f ./docker/docker-compose.yml up -d --build` for dev, or copy `/docker/vhost.conf` for a production server
  - Run `composer install`
  - Run `npm install`
+ - Make `site/assets/`, `/site/modules/`, and `site/config.php` writable by nginx
  - Visit site root in browser and do install
  - Delete `install.php`
  - Delete `/site/install/`
