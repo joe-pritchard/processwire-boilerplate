@@ -15,7 +15,7 @@ and includes a pretty decent start for an nginx configuration. Also starts me of
  - Visit site root in browser and do install
  - Delete `install.php`
  - Delete `/site/install/`
- - Visit ProcessWire admin and check for new modules, install `TemplateEngineFactory` and `TemplateEngineTwig`
+ - Install the `TemplateEngineFactory` and `TemplateEngineTwig` modules
  - With install done (and if you're in production) it's probably an idea to set php-fpm's `request_terminate_timeout`, php's `max_execution_time`, and nginx's `fastcgi_read_timeout` back down to something sensible like 30 second
  
 **Usage**
