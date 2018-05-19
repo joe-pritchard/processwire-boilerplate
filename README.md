@@ -1,19 +1,20 @@
 # processwire-boilerplate
 Another Processwire Boilerplate to make my life a little eaier
 
-##Installation
+**Installation**
 
  - Download processwire, and copy the `/wire/` directory, `install.php`, and `index.php` to project root.
  - Run `composer install`
  - Run `npm install`
  - Visit site root in browser and do install
- - Delete `install.php
- - Delete `/site/install.php`
+ - Delete `install.php`
+ - Delete `/site/install/`
  - Visit ProcessWire admin and check for new modules, install `TemplateEngineFactory` and `TemplateEngineTwig`
  
-##Usage
+**Usage**
 
-Your "Controllers" go in `/templates/` and your corresponding twig files go in `/templates/twig/
+Your "Controllers" go in `/templates/` and your corresponding twig files go in `/templates/twig/`. 
+You can change that in the TemplateEngineTwig config.  
 
 `/templates/js/main.js` and `/templates/sass/main.scss` will be comiled down to `/site/assets/`
 
