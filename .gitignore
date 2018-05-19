@@ -11,3 +11,6 @@ upgrade.php
 /site/assets/logs/
 /site/assets/sessions/
 /composer.phar
+/site/assets/main.css
+/site/assets/main.js
+/site/assets/active.php
