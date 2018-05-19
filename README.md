@@ -8,7 +8,7 @@ and includes a pretty decent start for an nginx configuration. Also starts me of
 
  - Download processwire, and copy the `/wire/` directory, `install.php`, and `index.php` to project root, or just execute `init.sh`.
  - Change project name in `package.json` (doesn't really matter), and `/docker/.env` (also doesn't really matter)
- - Run docker compose for dev, or copy `/docker/vhost.conf` for a production server
+ - Run `docker-compose -f ./docker/docker-compose.yml up -d --build` for dev, or copy `/docker/vhost.conf` for a production server
  - Run `composer install`
  - Run `npm install`
  - Visit site root in browser and do install
