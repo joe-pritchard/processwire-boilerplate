@@ -39,3 +39,5 @@ if(!defined("PROCESSWIRE")) die();
  *
  */
 $config->debug = true;
+$config->app_name = 'APP NAME';
+$config->ga_property = 'GA PROPERTY';
