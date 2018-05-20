@@ -28,7 +28,7 @@
         },
         created() {
           if (typeof(window.ga) === 'undefined') {
-                window.ga = () {}
+                window.ga = () => {}
             }
         },
         mounted() {
