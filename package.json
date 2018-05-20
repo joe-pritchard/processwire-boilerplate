@@ -12,6 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "laravel-mix": "^2.1.11"
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
+    "laravel-mix": "^2.1.11",
+    "lodash": "^4.0.0",
+    "popper": "^1.0.1",
+    "vue": "^2.5.16",
+    "vue-cookie": "^1.1.4"
   }
 }

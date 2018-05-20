@@ -4,4 +4,9 @@
 [v-cloak] {
   display: none;
 }
-
+#content {
+  min-height: 85vh;
+}
+footer.footer {
+  padding: 2rem 1.5rem 1rem;
+}

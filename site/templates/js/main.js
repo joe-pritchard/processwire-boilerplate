@@ -1,3 +1,4 @@
+require('./bootstrap');
 
 Vue.component('example-component', require('./components/Example.vue'));
 
