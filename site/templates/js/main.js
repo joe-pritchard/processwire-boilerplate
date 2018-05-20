@@ -1,6 +1,6 @@
 require('./bootstrap');
 
-Vue.component('example-component', require('./components/Example.vue'));
+Vue.component('ga-event-sender', require('./components/GaEventSender.vue'));
 
 const app = new Vue({
     el: '#app',
