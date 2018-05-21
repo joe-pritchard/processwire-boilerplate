@@ -27,17 +27,19 @@ if(!defined("PROCESSWIRE")) die();
 /*** SITE CONFIG *************************************************************************/
 
 /** @var Config $config */
+$dotenv = new \Dotenv\Dotenv($config->paths->root);
+$dotenv->load();
 
-/**
- * Enable debug mode?
- *
- * Debug mode causes additional info to appear for use during dev and debugging.
- * This is almost always recommended for sites in development. However, you should
- * always have this disabled for live/production sites.
- *
- * @var bool
- *
- */
 $config->debug = true;
-$config->app_name = 'APP NAME';
-$config->ga_property = 'GA PROPERTY';
+$config->app_name        = getenv('APP_NAME');
+$config->app_url         = getenv('APP_url');
+$config->app_description = getenv('APP_DESCRIPTION');
+$config->app_email       = getenv('APP_EMAIL');
+$config->app_phone       = getenv('APP_PHONE');
+$config->ga_property     = getenv('GA_PROPERTY');
+$config->dbHost   = getenv('DB_HOST');
+$config->dbName   = getenv('DB_DATABASE');
+$config->dbUser   = getenv('DB_USER');
+$config->dbPass   = getenv('DB_PASSWORD');
+$config->dbPort   = getenv('DB_PORT');
+$config->dbEngine = getenv('DB_ENGINE');
